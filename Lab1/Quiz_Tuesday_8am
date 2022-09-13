@@ -1,0 +1,32 @@
+Every week during the second hour of labs a quiz will be assigned. We'll be splitting the lab into groups, and you will work with your peers to complete
+the quiz requirements during the lab session. Your quiz will take concepts that you've learned in the previous lecture or lab and get you to apply them.
+
+Since students are divided into groups, your TA may ask any member of the group to explain part of the code, so as to ensure that every student understands.
+If you're experienced with python, help your peers out, and don't write everything by yourself.
+
+Please raise your hand when your group is done with the quiz, and a TA will come around to assign you a mark. There is no D2L upload required for Quizzes.
+There will also be a completely optional bonus component of the quiz. These take the concepts a step further and challenge you.
+The bonus is NOT FOR MARKS (so only do it after you have completed the main part).
+
+Quiz Question:
+
+Write a function that takes in as input three numbers.
+Find the largest number among them using if statements, and print it.
+If all numbers are equal to eachother, also print "There is no standout number"
+
+Example Input/Output:
+
+Input: a = 1, b = 2, c = 3
+Output: 3
+
+Input: a = 2, b = 2, c = 2
+Output: 2
+        There is no standout number
+
+Input: a = 2, b = 3, c = 3
+Output: 3
+
+*** Optional Bonus Question (NOT for marks - only do for interest if time!) ***
+
+Often times you'll be using functions from standard libraries or those written by other people.
+Try using Python's built-in max function: https://docs.python.org/3/library/functions.html#max to reduce the size of your function to 3-4 lines!
