@@ -30,3 +30,10 @@ Output: 3
 
 Often times you'll be using functions from standard libraries or those written by other people.
 Try using Python's built-in max function: https://docs.python.org/3/library/functions.html#max to reduce the size of your function to 3-4 lines!
+Then, use Python's build-in sum function: https://docs.python.org/3/library/functions.html#sum and print the sum of a, b, and c.
+
+Example Input/Output:
+
+Input: a = 1, b = 2, c = 3
+Output: 3
+        6
