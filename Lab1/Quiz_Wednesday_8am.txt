@@ -1,0 +1,48 @@
+Every week during the second hour of labs a quiz will be assigned. We'll be splitting the lab into groups, and you will work with your peers to complete
+the quiz requirements during the lab session. Your quiz will take concepts that you've learned in the previous lecture or lab and get you to apply them.
+
+Since students are divided into groups, your TA may ask any member of the group to explain part of the code, so as to ensure that every student understands.
+If you're experienced with python, help your peers out, and don't write everything by yourself.
+
+Please raise your hand when your group is done with the quiz, and a TA will come around to assign you a mark. There is no D2L upload required for Quizzes.
+There will also be a completely optional bonus component of the quiz. These take the concepts a step further and challenge you.
+The bonus is NOT FOR MARKS (so only do it after you have completed the main part).
+
+Quiz Question:
+
+Write a function that takes in as input two integers and a string.
+If the two integers are equal to eachother, print "There is harmony".
+If one of the numbers is over two times greater than the other number to the power of two, print "There is discord".
+If neither of the above are true, print the input string.
+
+Example Input/Output:
+
+Input: a = 2, b = 2, c = "Hello World"
+Output: There is harmony
+
+Input: a = 2, b = 9, c = "Hello World"
+Output: There is discord
+
+Input: a = 2, b = 7, c = "Please print me"
+Output: Please print me
+
+*** Optional Bonus Question (NOT for marks - only do for interest if time!) ***
+
+Just like you're able to compare integers using comparators (==, <=, >=, etc.), you can also do the same with strings!
+Create a new version of the above function that now takes in two integers and two strings.
+Just as before, if the two integers are equal to eachother, print "There is harmony".
+Also as before, if one of the numbers is over two trimes greater than the other number to the power of two, print "There is discord".
+However, now if neither of the above are true, if the input strings are equivalent, then print "There is string harmony".
+Otherwise, print the longest input string. If there is a tie you can print either input string.
+
+Example Input/Output:
+
+Input: a = 2, b = 7, c = "Harmony", d = "Harmony"
+Output: There is string harmony.
+
+Input: a = 2, b = 7, c = "I am longer", d = "I am short"
+Output: I am longer
+
+Input: a = 2, b = 2, c = "Drums", d = "Drums in the deep"
+Output: There is harmony
+        
