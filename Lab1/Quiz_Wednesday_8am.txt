@@ -28,16 +28,18 @@ Output: Please print me
 
 *** Optional Bonus Question (NOT for marks - only do for interest if time!) ***
 
-Just like you're able to compare integers using comparators (==, <=, >=, etc.), you can also do the same with strings!
+Often times you'll be using functions from standard libraries or those written by other people.
+You can use Python's built-in len function: https://docs.python.org/3/library/functions.html#len to get the length of a string.
+
 Create a new version of the above function that now takes in two integers and two strings.
 Just as before, if the two integers are equal to eachother, print "There is harmony".
 Also as before, if one of the numbers is over two trimes greater than the other number to the power of two, print "There is discord".
-However, now if neither of the above are true, if the input strings are equivalent, then print "There is string harmony".
+However, now if neither of the above are true, if the input strings are equivalent in length, then print "There is string harmony".
 Otherwise, print the longest input string. If there is a tie you can print either input string.
 
 Example Input/Output:
 
-Input: a = 2, b = 7, c = "Harmony", d = "Harmony"
+Input: a = 2, b = 7, c = "Balance", d = "Harmony"
 Output: There is string harmony.
 
 Input: a = 2, b = 7, c = "I am longer", d = "I am short"
