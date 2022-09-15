@@ -1,0 +1,44 @@
+
+Every week during the second hour of labs a quiz will be assigned. We'll be splitting the lab into groups, and you will work with your peers to complete
+the quiz requirements during the lab session. Your quiz will take concepts that you've learned in the previous lecture or lab and get you to apply them.
+
+Since students are divided into groups, your TA may ask any member of the group to explain part of the code, so as to ensure that every student understands.
+If you're experienced with python, help your peers out, and don't write everything by yourself.
+
+Please raise your hand when your group is done with the quiz, and a TA will come around to assign you a mark. There is no D2L upload required for Quizzes.
+There will also be a completely optional bonus component of the quiz. These take the concepts a step further and challenge you.
+The bonus is NOT FOR MARKS (so only do it after you have completed the main part).
+
+Quiz Question:
+
+Write a function that takes in 4 variables: a, b, c, and n, as input. These variables can be floats or integers.
+Find the largest number between a, b, and c, then print the sum of that largest number and the fourth variable n (e.g. if a is largest, print the value of a+n)
+Additionally, if a, b, and c are equal, print the value received by multiplying of one of the numbers with n (i.e. a*n)
+
+Example Input/Output:
+
+Input: a = 1, b = 2, c = 3, n = -7 
+Output: 3
+        -4
+
+Input: a = 2, b = 2, c = 2, n = 13.5
+Output: 2
+        15.5
+        27
+
+Input: a = 12, b = 2, c = 12, n = 17
+Output: 12
+        29
+        
+*** Optional Bonus Question (NOT for marks - only do for interest if time!) ***
+
+Often times you'll be using functions from standard libraries or those written by other people.
+Try using Python's built-in max function: https://docs.python.org/3/library/functions.html#max to reduce the size of your function!
+
+Recall as well that you can format your print statements by combining strings with integers/floats (or even casting integers/floats to strings).
+Right now your function output is a bit unintuitive. Update it so that your output has the following format:
+
+Input: a = 2, b = 2, c = 2, n = 13.5
+Output: The largest number among the first three variables is 3
+        The sum of 2 and 13.5 is 15.5
+        The product of 2 and 13.5 is 27.0
