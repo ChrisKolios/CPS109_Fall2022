@@ -38,6 +38,6 @@ Recall as well that you can format your print statements by combining strings wi
 Right now your function output is a bit unintuitive. Update it so that your output has the following format:
 
 Input: a = 2, b = 2, c = 2, n = 13.5
-Output: The largest number among the first three variables is 3
+Output: The largest number among the first three variables is 2
         The sum of 2 and 13.5 is 15.5
         The product of 2 and 13.5 is 27.0
