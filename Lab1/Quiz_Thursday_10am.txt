@@ -26,6 +26,10 @@ Input: a = 2, b = -7, c = 4
 Output: Even Steven
         4
 
+Input: a = 2, b = 2, c = 1
+Output: Even Steven
+        2
+
 *** Optional Bonus Question (NOT for marks - only do for interest if time!) ***
 
 Often times you'll be using functions from standard libraries or those written by other people.
