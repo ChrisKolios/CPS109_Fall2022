@@ -1,0 +1,48 @@
+Every week during the second hour of labs a quiz will be assigned. We'll be splitting the lab into groups, and you will work with your peers to complete
+the quiz requirements during the lab session. Your quiz will take concepts that you've learned in the previous lecture or lab and get you to apply them.
+
+Since students are divided into groups, your TA may ask any member of the group to explain part of the code, so as to ensure that every student understands.
+If you're experienced with python, help your peers out, and don't write everything by yourself.
+
+Please raise your hand when your group is done with the quiz, and a TA will come around to assign you a mark. There is no D2L upload required for Quizzes.
+There will also be a completely optional bonus component of the quiz. These take the concepts a step further and challenge you.
+The bonus is NOT FOR MARKS (so only do it after you have completed the main part).
+
+Quiz Question:
+
+Write a function that takes in 4 variables: a, b, c, and d, as input. You can assume that these input variables are integers or floats.
+Within the function body, use if (and/or elif, else) statements to find both the minimum and maximum values from among these input variables.
+Print the minimum value, then print the maximum value, and return the sum of the minimum and maximum values. 
+Finally, (now outside the function) when you call the function, set its output to some variable. Then, print that variable.
+
+Example Input/Output:
+
+Input: a = 2, b = 1, c = 4, d = 3
+Output: 1
+        4
+        5
+
+Input: a = 2, -2, 2, 2
+Output: -2
+        2
+        0
+
+Input: a = 3.1, b = 3.01, c = 3.001, d = 3.0001
+Output: 3.0001
+        3.1
+        6.1001
+        
+*** Optional Bonus Question (NOT for marks - only do for interest if time!) ***
+
+Often times you'll be using functions from standard libraries or those written by other people.
+Try using Python's built-in max function: https://docs.python.org/3/library/functions.html#max 
+and Python's build-in min function: https://docs.python.org/3/library/functions.html#min to reduce the size of your function!
+
+Recall as well that you can format your print statements by combining strings with integers (or even casting integers to strings).
+Right now your function output is a bit unintuitive. Update it so that your output (NOT just the print statement - the function output!) has the following format:
+"The sum of the minimum and maximum variables is [whatever the sum value is]."
+
+Input: a = 1, b = 2, c = 3, d = 4
+Output: 1
+        4
+        The sum of the minimum and maximum variables is 5.
