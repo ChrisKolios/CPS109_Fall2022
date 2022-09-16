@@ -46,3 +46,28 @@ Input: a = 1, b = 2, c = 3, d = 4
 Output: 1
         4
         The sum of the minimum and maximum variables is 5.
+        
+*** Optional SUPER Bonus Question (NOT for marks) ***
+
+Try to reduce the number of lines in the body of the function to two using the above functions and some clever printing.
+You can do this at the cost of efficiency (4 total calls to max/min), BUT you can also do this without being inefficient (2 total calls to max/min)!
+
+Input: a = 1, b = 2, c = 3, d = 4
+Output: 1
+        4
+        The sum of the minimum and maximum variables is 5.
+        
+*** Optional SUPER DUPER Bonus Question (NOT for marks - for clout) ***
+
+If we relax the requirement of printing the min/max then returning the sum both within the function, and instead either print within the function
+OR return within the function, we can reduce the number of lines in the body of the function to just one!
+Then, using a single line we can either call the function (which prints internally) OR print the function output (which just returns).
+
+Again, we can do this at the cost of efficiency (4 total calls to max/min), BUT you can also do this without being inefficient (2 total calls to max/min)!
+This means you can write the whole program in just 3 lines - a function definition, a print/return statement, and a function call. If you can do this with the
+optimal efficiency I will think of some prize to give you.
+
+Input: a = 1, b = 2, c = 3, d = 4
+Output: 1
+        4
+        The sum of the minimum and maximum variables is 5.
