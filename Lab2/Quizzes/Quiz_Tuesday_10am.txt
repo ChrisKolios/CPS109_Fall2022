@@ -1,1 +1,58 @@
-Will be uploaded at 11:00 a.m. on Tuesday September 20th. This is a timed exercise after all!
+Just a couple of reminders from last week:
+
+1. Your Quiz will be assigned in the second half of the lab, and you will have until the end of the lab (~1 hour) to complete and run through it
+2. When you are done your Quiz, raise your hand and a TA will get to you. There is a queue system
+3. You will be split into groups. Every member of the group is expected to be able to explain any line of the solution
+
+4. Academic Dishonesty: You are allowed to use the official Python documentation. You can refer to any of the Github examples. You ARE NOT allowed to use Google / Stack Overflow / etc. Ask your TA if you have a question.
+(https://docs.python.org/3.10/)
+
+Quiz Question:
+
+Write a function that takes in a list of integers as input.
+Within the function:
+Create some variable called full_operation and set it to 0.
+For every integer of the input list at an even index (0,2,...) add that integer to full_operation. Remember that lists start at index 0.
+For every integer of the input list at an odd index (1,3,...) subtract full_operation by that integer.
+After you have looped through the whole list, return full_operation.
+
+Outside of the function (in the if __name__ == "__main__" block):
+First create an empty list.
+Then, set some integer num_ints to user input, representing the amount of integers that should be added to the list.
+Prompt the user to enter an integer num_ints times, and for each integer they enter add it to the list.
+Finally, print the call of the above function using the (now non-empty) list.
+
+Example Input/Output:
+
+Input:
+>>> 4
+>>> 2
+>>> 4
+>>> 6
+>>> 8
+Output:
+-4
+
+Input:
+>>> 3
+>>> -3
+>>> 3
+>>> -4
+Output:
+-10
+
+*** Optional Bonus Question (NOT for marks - only do for interest if time!) ***
+
+Modify your above function such that if it encounters some number that it has already seen before, it will immediately stop its execution (i.e. not add/subtract the offending integer) and return the current full_operation.
+Hint: You can use the syntax: x in l , to return True if the value of a variable x is in a list l (and False otherwise).
+
+Example Input/Output:
+
+Input:
+>>> 4
+>>> 2
+>>> 4
+>>> 2
+>>> 8
+Output:
+-2
