@@ -1,1 +1,60 @@
-Will be uploaded at 9:00 a.m. on Tuesday September 20th. This is a timed exercise after all!
+Just a couple of reminders from last week:
+
+1. Your Quiz will be assigned in the second half of the lab, and you will have until the end of the lab (~1 hour) to complete and run through it
+2. When you are done your Quiz, raise your hand and a TA will get to you. There is a queue system
+3. You will be split into groups. Every member of the group is expected to be able to explain any line of the solution
+
+4. Academic Dishonesty: You are allowed to use the official Python documentation. You can refer to any of the Github examples. You ARE NOT allowed to use Google / Stack Overflow / etc.  for anything past syntax. Ask your TA if you have a question.
+
+Quiz Question:
+
+Write a function that takes in a list of strings as input.
+Within the function:
+For every item of the input list at an even index (0,2,...) print out the string at that index with a question mark at the end. Remember that lists start at index 0.
+For every item of the input list at an odd index (1,3,...) print out the string at that index with an exclamation mark at the end.
+
+Outside of the function (in the if __name__ == "__main__" block):
+First create an empty list.
+Then, set some integer num_strings to user input, representing the amount of strings that should be added to the list.
+Prompt the user to enter a string num_strings times, and for each string they enter add it to the list.
+Finally, call the above function using the (now non-empty) list.
+
+Example Input/Output:
+
+Input:
+>>> 4
+>>> What do we want
+>>> Sleep
+>>> When do we want it
+>>> Now
+Output:
+What do we want?
+Sleep!
+When do we want it?
+Now!
+
+Input:
+>>> 2
+>>> Why are there two example inputs
+>>> So we can test for variable list size
+Output:
+Why are there two example inputs?
+So we can test for variable list size!
+
+*** Optional Bonus Question (NOT for marks - only do for interest if time!) ***
+
+Again, you will frequently be tasked with using functions from standard libraries.
+This time, you'll use Python's string.replace() method (https://python-reference.readthedocs.io/en/latest/docs/str/replace.html) to do the above, but instead print an uWu-ified version of the user input strings.
+To uWu-ify a string, replace all r's and l's with w's.
+
+Example Input/Output:
+
+Input:
+>>> 2
+>>> Do you like this bonus question
+>>> I really, really love it
+
+Output:
+Do you wike this bonus question?
+I weawwy, weawwy wove it!
+
