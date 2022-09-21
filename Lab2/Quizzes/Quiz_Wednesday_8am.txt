@@ -1,1 +1,64 @@
-Will be uploaded at 9:00 a.m. on Wednesday September 21st. This is a timed exercise after all!
+Just a couple of reminders from last week:
+
+1. Your Quiz will be assigned in the second half of the lab, and you will have until the end of the lab (~1 hour) to complete and run through it
+2. When you are done your Quiz, raise your hand and a TA will get to you. There is a queue system
+3. You will be split into groups. Every member of the group is expected to be able to explain any line of the solution
+
+4. Academic Dishonesty: You are allowed to use the official Python documentation. You can refer to any of the Github examples. You ARE NOT allowed to use Google / 
+Stack Overflow / etc. for anything past syntax (i.e. no logic). Ask your TA if you have a question.
+(https://docs.python.org/3.10/)
+
+Quiz Question:
+
+Write a function that takes in a list of integers and an individual integer as input. Your goal will be to perform a modified 1D matrix * scalar multiplication, 
+where your list is the matrix and your integer input is the scalar. See below for how it is modified.
+
+Within the function:
+Iterate over the list contents using some kind of loop. If the integer at that position is not equal to 4, set the value at that list index to now be equal to that integer multiplied by your input scalar.
+However, if your list item at any index is equal to 4, then don't multiply it by the scalar and keep it as it is!
+After you have looped through the whole list and multiplied the scalar throughout (accounting for special 4 behaviour), return the updated list.
+
+Outside of the function (in the if __name__ == "__main__" block):
+First create an empty list.
+Then, set some integer num_ints to user input, representing the amount of integers that should be added to the list.
+Prompt the user to enter an integer num_ints times, and for each integer they enter add it to the list.
+Then, prompt the user to enter some scalar value that will be multiplied into the list.
+Finally, print the call of the above function using the (now non-empty) list and the integer as inputs.
+
+Example Input/Output:
+
+Input:
+>>> How many numbers in list: 4
+>>> 1
+>>> 2
+>>> 3
+>>> 4
+>>> Enter scalar value: 4
+Output:
+[4, 8, 12, 4]
+
+Input:
+>>> How many numbers in list: 3
+>>> -4
+>>> 4
+>>> -5
+>>> Enter scalar value: -2
+Output:
+[8, 4, 10]
+
+*** Optional Bonus Question (NOT for marks - only do for interest if time!) ***
+
+Modify your above function such that if it encounters some number that it has already seen before (i.e. there are duplicates in the input list), it will immediately stop its execution and return -1.
+Hint: You can use the syntax: x in l , to return True if the value of a variable x is in a list l (and False otherwise).
+
+Example Input/Output:
+
+Input:
+>>> How many numbers in list: 4
+>>> 1
+>>> 2
+>>> 2
+>>> 3
+>>> Enter scalar value: 8
+Output:
+-1
