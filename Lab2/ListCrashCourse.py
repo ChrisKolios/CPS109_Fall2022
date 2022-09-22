@@ -42,11 +42,11 @@ if __name__ == "__main__":
 	# Where listname is the name of your list variable, and x is whatever data you want to add to the end
 
 	print(simple_number_list) # You'll see that we have added 6 to the end of the list
-	simple_number_list.append("Cherry")
+	simple_number_list.append("Clementine")
 	print(simple_number_list) # It doesn't matter what kind of data we append
 
 	x = simple_number_list.pop() # If we want to remove the item at the end of the list, we can call listname.pop()
-	print(simple_number_list) # We no longer have 'Cherry' in our list
+	print(simple_number_list) # We no longer have 'Clementine' in our list
 	print(x) # You'll notice that not only does pop remove things from the list, but it also returns whatever it just
 	# removed (which we set a variable x to, in case we want the removed item)
 
@@ -59,7 +59,7 @@ if __name__ == "__main__":
 
 	# What if we want to see what kind of data is at a specific position in the list? In this case, we can use something called indexing.
 	# Consider the following list: 
-	fruit_list = ["Apple", "Banana", "Cherry"]
+	fruit_list = ["Apple", "Banana", "Clementine"]
 	print(len(fruit_list)) # Our length is 3, as there are 3 items in the list. Makes sense.
 	# Indexing means that we access data from a list at a certain position.
 	print(fruit_list[0]) # To access the first element of a list, we do: listname[0]. Notice the square brackets, and that indices start at 0 (not 1)!
