@@ -1,1 +1,72 @@
-Will be uploaded at 9:00 a.m. on Thursday September 22nd. This is a timed exercise after all!
+Will be uploaded at 9:05 a.m. on Thursday September 22nd. This is a timed exercise after all!
+
+Just a couple of reminders from last week:
+
+1. Your Quiz will be assigned in the second half of the lab, and you will have until the end of the lab (~1 hour) to complete and run through it
+2. When you are done your Quiz, raise your hand and a TA will get to you. There is a queue system
+3. You will be split into groups. Every member of the group is expected to be able to explain any line of the solution
+
+4. Academic Dishonesty: You are allowed to use the official Python documentation. You can refer to any of the Github examples. You ARE NOT allowed to use Google / 
+Stack Overflow / etc. for anything past syntax (i.e. no logic). Ask your TA if you have a question.
+(https://docs.python.org/3.10/)
+
+Quiz Question:
+
+Write a function that takes in a list of strings as input. Your goal will be to count the total number of vowels across all strings in a list.
+Remember that vowels are: a, e, i, o, u, and SOMETIMES y. For the purpose of this question, we only count y as a vowel if it occurs at the end of a whole string (NOT individual words in a string)!!
+You can assume that input strings are all lowercase by default.
+
+Within the function:
+Create an integer num_vowels and set it to 0.
+Iterate over the list of strings using some kind of loop. Then, iterate over each character (perhaps via index) in each string. If you encounter a vowel (as defined above), add 1 to your num_vowels variable.
+Finally, return num_vowels.
+Hint: Recall nested loops.
+
+Outside of the function (in the if __name__ == "__main__" block):
+First create an empty list.
+Then, set some integer num_strings to user input, representing the amount of strings that should be added to the list.
+Prompt the user to enter a string num_strings times, and for each string they enter add it to the list.
+Finally, print the call of the above function using the (now non-empty) list as input.
+
+Example Input/Output:
+
+Input:
+>>> How many strings in list: 3
+>>> apple
+>>> banana
+>>> clementine
+Output:
+9
+
+Input:
+>>> How many strings in list: 2
+>>> very cherry
+>>> yuzu
+Output:
+5
+
+# Note: If you count the vowels for input 2 you'll notice it's 1 less than the actual number (6). This is because the word 'very' does not occur at the end of the string as a whole.
+# It is much trickier to count if y occurs at the end of each word in a string (consider, we'd have to split the string into individual words). We'll try this in the bonus!
+
+*** Optional Bonus Question (NOT for marks - only do for interest if time!) ***
+
+You will frequently be tasked with using functions from standard libraries.
+This time, you'll use Python's string.replace() method (https://python-reference.readthedocs.io/en/latest/docs/str/replace.html) to do the above, 
+but instead of just counting vowels, you will first uWu-ify the list strings, then count the number of vowels, and finally return (and print) both the num_vowels AND then new uwu-ified list.
+To uWu-ify a string, replace all r's and l's with w's.
+
+We will also modify how we consider y's. Now, instead of occuring at the end of the whole string to be considered a vowel, it should occur at the end of a word within the string.
+To split the string into individual words, we can use Python's string.split() method (https://python-reference.readthedocs.io/en/latest/docs/str/split.html).
+For simplicity's sake, if a "word" has punctuation at the end we will not consider an ending y as a vowel: (e.g. "toy year" has 4 vowels, but "toy! year" has 3 vowels by this definition.)
+
+Example Input/Output:
+
+Input:
+>>> How many strings in list: 2
+>>> clementine
+>>> these bonus questions are really really fun!
+Output:
+21
+['cwementine', 'these bonus questions awe weawwy weawwy fun!']
+
+Note: If you count the vowels you'll notice it's now the actual number (21). We'd get 19 in the non-bonus question. This is because for the words 'weawwy' (which occur 2x), we count the y as a vowel.
