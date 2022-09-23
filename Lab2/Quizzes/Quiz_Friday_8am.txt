@@ -1,1 +1,69 @@
-Will be uploaded at 9:00 a.m. on Friday September 23rd. This is a timed exercise after all!
+Just a couple of reminders from last week:
+
+1. Your Quiz will be assigned in the second half of the lab, and you will have until the end of the lab (~1 hour) to complete and run through it
+2. When you are done your Quiz, raise your hand and a TA will get to you. There is a queue system
+3. You will be split into groups. Every member of the group is expected to be able to explain any line of the solution
+
+4. Academic Dishonesty: You are allowed to use the official Python documentation. You can refer to any of the Github examples. You ARE NOT allowed to use Google / 
+Stack Overflow / etc. for anything past syntax (i.e. no logic). Ask your TA if you have a question.
+(https://docs.python.org/3.10/)
+
+Quiz Question:
+
+You've recently been hired to be a bouncer at the hippest coffee bar in town. All the stylish coffee-loving strings are to be allowed entry, but you've heard that secret agent strings
+from a rival tea bar are trying to sneak in and promote their own business. As a great coder, you've managed to figure out the algorithm behind determining if a given customer/string is a
+true coffee fan or a tea double agent. Tea agents love tea and hate coffee - so much so that they will either have more than 3 instances of the letter "t" in their string, or less than 
+4 instances of the letter "c" (as they detest coffee so much)!
+
+Write a function that takes in a list of strings as input. Your goal will be to remove any string that contains more than 3 instances of the letter t, or less than 4 instances of the letter c from the list.
+
+Within the function:
+Use some kind of loop to iterate over the strings/elements in the list.
+You'll want to keep track of how many "t"s and how many "c"s are in each string/element. You can assume that all strings are lowercase.
+Using another loop, iterate over the strings in the list themselves, and count the number of "t"s and "c"s in those strings.
+If a string has either more than 3 "t"s, or less than 4 "c"s, remove it from the list.
+Hint: You don't have to return the original list variable with the offending strings removed (you can return some new list variable). There can be issues if you're trying to edit a list while iterating over it...
+Finally, return the updated list.
+
+Outside of the function (in the if __name__ == "__main__" block):
+First create an empty list.
+Then, set some integer num_strings to user input, representing the amount of strings that should be added to the list.
+Prompt the user to enter a string num_strings times, and for each string they enter add it to the list.
+Finally, print the call of the above function using the (now non-empty) list as input.
+
+Example Input/Output:
+
+Input:
+>>> How many strings in list: 4
+>>> coffee is crazy cool cause caffiene is awesome
+>>> tea is totally terrible trash! totally!
+>>> cold coffee is chilly (brrr!)
+>>> calgary coffee contains ice
+Output:
+['coffee is crazy cool cause caffiene is awesome', 'calgary coffee contains ice']
+
+Input:
+>>> How many strings in list: 4
+>>> ccc
+>>> cccc
+>>> ccccttt t
+>>> ccccttt
+Output:
+['cccc', 'ccccttt']
+
+*** Optional Bonus Question (NOT for marks - only do for interest if time!) ***
+
+You will frequently be tasked with using functions from standard libraries.
+This time, you'll use Python's string.replace() method (https://python-reference.readthedocs.io/en/latest/docs/str/replace.html) to do the above but also uWu-ify the list strings.
+To uWu-ify a string, replace all r's and l's with w's.
+
+Example Input/Output:
+
+Input:
+>>> How many strings in list: 2
+>>> i really love coffee cause it tastes like caramel and candy
+>>> i can't stand coffee
+Output:
+['i weawwy wove coffee cause it tastes wike cawamew and candy']
+
+Also, special shout out to those who completed the super duper bonus last week (hopefully I spelled your names right!): 
