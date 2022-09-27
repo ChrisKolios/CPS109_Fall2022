@@ -28,4 +28,20 @@ if __name__ == "__main__":
         guess = (lo + hi) / 2
         error = guess ** root - num
 
-    print('The approximate cube root of ', num, 'is', guess)
+    print('The approximate', root, 'root of ', num, 'is', guess)
+    
+    # This example can be a bit tricky to understand. Let's trace through an example input to see exactly what's going on here.
+    
+    # Consider num = 9, and root = 2 (i.e. we want to find the square root of 9, which is, of course, 3)
+    # Then lo = 0, hi = 9, guess = 4.5, e = 0.0001, and error = (4.5)^2 - 9 = 11.25
+    
+    # abs(11.25) > 0.0001, so we then check and notice 11.25 > 0, and so now hi = 4.5
+    # Now guess = (0 + 4.5) / 2 = 2.25, and error = 2.25^2 - 9 = -3.9375
+    
+    #  abs(-3.9375) > 0.0001, so we check and notice -3.9375 < 0, so now lo = 2.25
+    # Now guess = (2.25 + 4.5) / 2 = 3.375, and error = 3.375^2 - 9 = 2.390625
+
+    # abs(2.390625) > e, so we check and notice 2.390625 > 0, so now hi = 3.375
+    # Now guess = (2.25 + 3.375) / 2 = 2.8125, and error = 2.8125^2 - 9 = -1.08984375
+    
+    # Cont...
