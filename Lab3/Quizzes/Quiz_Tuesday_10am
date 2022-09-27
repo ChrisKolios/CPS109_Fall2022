@@ -1,1 +1,48 @@
-Will be uploaded @ 11:00 am
+Quiz Question:
+
+Why was 6 afraid of 7? Because 7 8 9 (7 ate 9)! Recently there have been some frightening cases of sequential-number-cannibalism. As such, the integers are scared of numbers greater or less than them by 1.
+
+Write a function that takes in a list of positive integers as input. If a number in a list is one more/less than a number beside it, then separate them 
+by adding in a guard string ("GUARD") between them. See: "outside of the function" for how to handle user inputs.
+
+Within the function:
+Return the list where any sequential values (i.e. the two values differ by +/- 1) are separated by the string "GUARD".
+Hint: It can cause problems if you're iterating over a list and modifying it at the same time (consider what you might try to access...). Instead, you can create a new list and return that.
+
+Outside of the function (in the if __name__ == "__main__" block):
+First create an empty list.
+Then, set some integer num_ints to user input, representing the amount of integers that should be added to the list.
+Prompt the user to enter an integer num_ints times, and for each integer they enter that is not equal to 0, add it to the list.
+If they enter a 0, chide them, and prompt them to enter a different integer. The final length of your input list should still be num_ints.
+Finally, print the call of the above function using the (now non-empty) list.
+
+Example Input/Output:
+
+Input:
+>>> Enter the number of integers in your list: 2
+>>> Enter a non-zero number: 1
+>>> Enter a non-zero number: 2
+Output:
+[1, 'GUARD', 2]
+
+Input:
+>>> Enter the number of integers in your list: 3
+>>> Enter a non-zero number: 1
+>>> Enter a non-zero number: 2
+>>> Enter a non-zero number: 0
+Hey! I said you can't enter 0! >:(
+>>> Enter a non-zero number: 4
+Output:
+[1, 'GUARD', 2, 4]
+
+Input:
+>>> Enter the number of integers in your list: 5
+>>> Enter a non-zero number: -2
+>>> Enter a non-zero number: -3
+>>> Enter a non-zero number: -4
+>>> Enter a non-zero number: -3
+>>> Enter a non-zero number: 2
+Output:
+[-2, 'GUARD', -3, 'GUARD', -4, 'GUARD', -3, 2]
+
+*** No bonus this week ***
