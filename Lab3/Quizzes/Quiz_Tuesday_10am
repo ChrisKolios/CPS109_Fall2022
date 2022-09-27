@@ -2,7 +2,7 @@ Quiz Question:
 
 Why was 6 afraid of 7? Because 7 8 9 (7 ate 9)! Recently there have been some frightening cases of sequential-number-cannibalism. As such, the integers are scared of numbers greater or less than them by 1.
 
-Write a function that takes in a list of positive integers as input. If a number in a list is one more/less than a number beside it, then separate them 
+Write a function that takes in a list of integers as input. If a number in a list is one more/less than a number beside it, then separate them 
 by adding in a guard string ("GUARD") between them. See: "outside of the function" for how to handle user inputs.
 
 Within the function:
