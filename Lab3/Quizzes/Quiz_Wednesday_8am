@@ -1,0 +1,41 @@
+Quiz Question:
+
+Write a function that takes in a list of lowercase strings as input. Your goal will be to return the list with all instances of the letter "e" removed.
+Additionally, if any individual string has more than 4 instances of the letter "e" in it, remove that string entirely.
+
+Within the function:
+Note: You ARE NOT allowed to use str.replace() here, or any built-in string methods!
+Return a list composed of all string elements from your input list with the letter "e" removed. If any string from the input list has more than 4 "e"s in it, do not include it in the return list at all.
+Hint: It can cause problems if you're iterating over a list and modifying it at the same time (consider what you might try to access...). Instead, you can create a new list and return that.
+Hint 2: Recall that you can use the syntax: curr_str += new_stuff to add the string new_stuff to the existing string curr_str.
+Hint 3: Recall nested loops
+
+Outside of the function (in the if __name__ == "__main__" block):
+First create an empty list.
+Then, set some integer num_strings to user input, representing the amount of strings that should be added to the list.
+Prompt the user to enter a string num_strings times, and for each string they enter that is not equal to "sneak", add it to the list.
+If they enter "sneak", chide them, and prompt them to enter a different string. The final length of your input list should still be num_strings.
+Finally, print the call of the above function using the (now non-empty) list.
+
+Example Input/Output:
+
+Input:
+>>> Enter the number of string in your list: 3
+>>> Enter a string to add to your list: "amongus"
+>>> Enter a string to add to your list: "fortnite"
+>>> Enter a string to add to your list: "minecraft"
+Output:
+['amongus', 'fortnit', 'mincraft']
+
+Input:
+>>> Enter the number of string in your list: 4
+>>> Enter a string to add to your list: "creep"
+>>> Enter a string to add to your list: "crawl"
+>>> Enter a string to add to your list: "sneak"
+Nice try, but no "sneak"ing in my list!
+>>> Enter a string to add to your list: "eerie creek"
+>>> Enter a string to add to your list: "seething teeth"
+Output:
+['crp', 'crawl', 'sthing tth']
+
+*** No bonus this week ***
