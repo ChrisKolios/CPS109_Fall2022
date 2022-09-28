@@ -70,13 +70,13 @@ if __name__ == "__main__":
 	print(c)
 	print(a) # a has also changed!
 
-	# We call c a shallow copy of a
+	# Here c is not really even a copy of a - it's just a reference to a
 
 	# But that's not a desired behaviour, right? If we want to make a copy of a called c and edit it without modifying the original list a, how might we do that?
 
 	# Two primary ways:
 	a = [1, 2, 3]
-	c = a[:] # Using this indexing technique, you'll notice that c is not a reference to a - it is now it's own unique list. We can call this a deep copy.
+	c = a[:] # Using this indexing technique, you'll notice that c is not a reference to a - it is now it's own unique list.
 
 	print(a is c) # False! Great!
 	c[0] = 3 # Check what happens when we modify the value...
@@ -91,10 +91,12 @@ if __name__ == "__main__":
 	print(a) # Just as desired, when we modify c we don't change a
 
 	# So, the TLDR here is:
-	# When you want to create a deep copy list2 (i.e. an independent copy) of a list list1, you either have to use the syntax:
+	# When you want to create an independent list2 (i.e. an independent copy) of a list list1, you either have to use the syntax:
 	# 1. list2 = list1[:]
 	# OR
 	# 2. list2 = list1.copy()
+	
+	# There's a bit more to it than this (check out copy.deepcopy() if you're curious), but this is the most important thing.
 
 	# Just a final quick note on passing lists in to functions:
 	a = [1, 2, 3]
