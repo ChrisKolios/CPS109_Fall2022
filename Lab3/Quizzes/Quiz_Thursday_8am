@@ -1,0 +1,53 @@
+Quiz Question:
+
+Write a function that takes in a list of strings as inputs. These strings correspond to passwords. 
+Your goal will be to ensure that all passwords are valid, and if not, you must adjust the password so that it meets ALL requirements.
+
+Passwords must:
+1. Be over 4 characters long
+2. Contain at least 1 number
+3. Contain at least 3 instances of the letter "h"
+
+If a password is not valid, you should make the minimum number of changes to make it valid. See the Example Input/Output and below.
+
+Within the function:
+Iterate over all passwords in the input list.
+Make these modifications in order:
+If the password does not contain a number, then add the number "1" (in string form!) to the end of the password.
+Hint 1: You are allowed to use str.isdigit() to check if a string character is a number (See: https://docs.python.org/3/library/stdtypes.html#str.isdigit)
+Then, if the password does not contain at least 3 instances of the letter "h", add enough "h"s so that it does.
+Finally, if the password is not at least 5 characters or more, add "h"s to the end of the password until it is.
+Hint 2: Recall that you can use the syntax: curr_str += new_stuff to add the string new_stuff to the existing string curr_str.
+Hint 3: Recall nested loops
+Return your list, which should now contain only valid passwords.
+
+Outside of the function (in the if __name__ == "__main__" block):
+First create an empty list.
+Then, set some integer num_passwords to user input, representing the amount of passwords that should be added to the list.
+Prompt the user to enter a password num_passwords times, and for each password they enter add it to the list, but only if it does not contain the character "@"!
+If they enter a password that contains the character "@", inform the user that the "@" character is reserved for emails, and ask them to enter a different password. 
+The final length of your input list should still be num_passwords.
+Finally, print the call of the above function using the (now non-empty) list.
+
+Example Input/Output:
+
+Input: 
+>>> Enter the number of passwords in your list: 4
+>>> Enter a password: hahaha123
+>>> Enter a password: 12345
+>>> Enter a password: hhh1
+>>> Enter a password: shakeshack
+Output:
+['hahaha123', '12345hhh', 'hhh1h', 'shakeshack1h']
+
+Input:
+>>> Enter the number of passwords in your list: 3
+>>> Enter a password: hhhh123
+>>> Enter a password: ckolios@ryerson.ca
+The '@' symbol is reserved for emails! Please enter another password.
+>>> Enter a password: hunter2
+>>> Enter a password: 42shees
+Output:
+['hhhh123', 'hunter2hh', '42sheeshh']
+
+*** No bonus this week ***
