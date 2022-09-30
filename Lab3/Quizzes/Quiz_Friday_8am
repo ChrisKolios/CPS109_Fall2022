@@ -1,0 +1,51 @@
+Quiz Question:
+
+Write a function that takes in a list of strings as input. These strings will be composed of letters and numbers. Your mission is to separate the letters and numbers into 
+different lists for each string. In the letter string list, insert a string containing all non-number characters, so that each string is just the original string without any numbers. 
+In the number list, at each index have an integer representing the sum of all numbers in that string. Finally, return both lists. You can assume there are no double-digit numbers. 
+See the Example Input/Output for clarification.
+
+Within the function:
+First create two empty lists representing your letter and sum lists.
+Iterate over all strings in the input list.
+For each string you encounter, iterate through each character in that string.
+If the character is a number, add it to the sum list at the appropriate location. You can either store it in a list to sum later (not recommended) or directly add it to your sum list value here (recommended).
+	Hint 1: You are allowed to use str.isdigit() to check if a string character is a number (See: https://docs.python.org/3/library/stdtypes.html#str.isdigit)
+	Hint 2: Recall that you can cast a string/character to an integer via the syntax: int_version = int(string_version) for some string string_version.
+Otherwise, add it to the letter list at the appropriate location.
+	Hint 2: Recall that you can use the syntax: curr_str += new_stuff to add the string new_stuff to the existing string curr_str.
+	Hint 3: Recall nested loops.
+After you're done processing your input list, if you didn't add your numbers in the sum list yet, go through each index in the sum list and sum all the values at that index.
+Return your two lists, first the letter list which should contain strings containing all letters except the numbers, and second the sum list which should contain the sums of all numbers in each individual string.
+	Hint 4: For simplicity's sake, you can just go: return letter_list, sum_list (You don't have to format this nicely)
+
+Outside of the function (in the if __name__ == "__main__" block):
+First create an empty list.
+Then, set some integer num_strings to user input, representing the amount of strings that should be added to the list.
+Prompt the user to enter a string num_strings times, and for each string they enter add it to the list, but only if it does not contain the character "."!
+If they enter a string that contains the character ".", admonish them, and do not add it to the list.
+The final length of your input list should still be num_strings.
+Finally, print the call of the above function using the (now non-empty) list.
+
+Example Input/Output:
+
+Input: 
+>>> Enter the number of strings in your list: 3
+>>> Enter a string: 1q2w3e4r5t6y7
+>>> Enter a string: no numbers here
+>>> Enter a string: 1se1cre1t
+Output:
+(['qwerty', 'no numbers here', 'secret'], [28, 0, 3])
+
+Input:
+>>> Enter the number of strings in your list: 4
+>>> Enter a string: a2ppr4ec6iat8e
+>>> Enter a string: 4.3 hee hee hee
+Hey! I said no dots! Period!
+>>> Enter a string: no numbers again!
+>>> Enter a string: 13579
+>>> Enter a string: speak l33t - pwn n00bz
+Output:
+(['appreciate', 'no numbers again!', '', 'speak lt - pwn nbz'], [20, 0, 25, 6])
+
+*** No bonus this week ***
