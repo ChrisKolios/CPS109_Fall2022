@@ -1,1 +1,64 @@
-Will be uploaded at ~9 am.
+Quiz Question:
+
+Your goal for this quiz will be to implement ONE of two different functions, which are to help your pals pick out their outfits for labs.
+
+Function 1:
+
+Within a function, prompt a user to first enter a colour, and then an article of clothing. You can assume their input is lowercase.
+
+Valid colours include: ["yellow", "orange", "red", "purple", "blue", "green"]
+Valid articles of clothing include: ["shirt", "pants", "dress", "sweater"]
+
+If the user enters anything other than one of these valid inputs, admonish them and keep asking until they provide a valid input.
+Hint: Recall the "in" keyword
+For each valid combination, add a string consisting of colour + article of clothing to a list in the following format: "colour article" (e.g. "blue shirt")
+If the user ever enters: "stop", then stop asking them for input, and return the existing list.
+
+In your main, print the call to your function.
+
+Example Input/Output:
+
+Input: 
+>>> Enter a colour: blue
+>>> Enter an article of clothing: pants
+>>> Enter a colour: green
+>>> Enter an article of clothing: sweater
+>>> Enter a colour: magenta
+Please enter a valid colour
+>>> Enter a colour: purple
+>>> Enter an article of clothing: hat
+Please enter a valid article of clothing
+>>> Enter an article of clothing: dress
+>>> Enter a colour: red
+>>> Enter an article of clothing: stop
+Output:
+["blue pants", "green sweater", "purple dress"]
+
+Function 2:
+
+Within a different function, take in as input a list of colourful clothes (in the format of Function 1's output).
+Using the following complementary colour wheel: https://www.edrawsoft.com/howto/color-wheel.png you are tasked with determining if there exists a complementary outfit.
+
+So, if there are two DIFFERENT kinds of articles of clothing that have complementary colours (according to the linked wheel (e.g. blue + orange)), then print: "Nice fit"
+Otherwise, print: "Zero drip"
+
+Hint: You are allowed to use str.split() (see: https://docs.python.org/3/library/stdtypes.html#str.split) here.
+
+Example Input/Output:
+
+Input:
+["blue pants", "red dress", "orange sweater"]
+Output:
+Nice fit
+
+Input:
+["green pants", "purple dress", "blue shirt"]
+Output:
+Zero drip
+
+Input:
+["green shirt", "red shirt", "yellow pants"]
+Output:
+Zero drip
+
+*** No bonus this week ***
