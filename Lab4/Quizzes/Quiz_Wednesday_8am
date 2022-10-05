@@ -1,0 +1,38 @@
+Quiz Question:
+
+Your goal for this quiz will be to implement a function that, given a list of strings, returns a list composed of lists for each string, containing the letters
+of the alphabet that are not present in that string. You can assume the user input is all lowercase.
+
+Recall that the letters of the alphabet are:
+["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+
+Function 1:
+
+As input to the function, take in some string called: termination_word
+
+Within the function, prompt a user to enter a string. Keep prompting the user for a string until they enter the termination_word string.
+
+Once the user has entered the termination word, create some new outer list, and for each string in your original list add a new inner list composed of all letters
+of the alphabet which do not occur in that particular string.
+Hint: Recall the "in" keyword
+At the end of your function, return that greater list, alongside the original list of strings.
+
+In your main, print the call to your function. Do your print in such a way that it first prints the string that the user entered, then a colon, then the list of all
+not-included letters for that string, all on the same line.
+
+Example Input/Output:
+
+Input: 
+termination_word = "halt!"
+>>> Enter a string: a spectacular quiz question my good ta
+>>> Enter a string: the quick brown fox jumps over the lazy dog
+>>> Enter a string: abcdefgjklmnopqrstuvwxyzz
+>>> Enter a string: halt!
+Output:
+a spectacular quiz question my good ta : ['b', 'f', 'h', 'j', 'k', 'v', 'w', 'x']
+the quick brown fox jumps over the lazy dog : []
+abcdefgjklmnopqrstuvwxyzz : ['h', 'i']
+
+*** No bonus this week ***
+
+
