@@ -1,0 +1,38 @@
+Quiz Question:
+
+Note: This week’s quiz will be a shorter one due to running through the Ubuntu systems in preparation for the midterm at the beginning of the lab.
+
+Factorial, schmacktorial. Who cares about some boring old mathematical concept? You’re cutting-edge Python coders, so you should be coding cutting-edge mathematical concepts!
+
+Introducing: The Snacktorial. The key limitation of the factorial is its inability to handle decimals. The Snacktorial resolves this. Here are the rules for the Snacktorial:
+
+If the input is negative or 0, the Snacktorial is 0
+If the input is greater than 0 but less than or equal to 1, the Snacktorial is just the input
+If the input is greater than 1, the Snacktorial is equal to the input times the Snacktorial of the input minus 1
+
+So for example the Snacktorial of 4.5 is 4.5 * 3.5 * 2.5 * 1.5 * 0.5 = 29.53125
+
+Your goal is to implement a recursive function that calculates the Snacktorial of some float input
+
+Example Input/Output:
+Input:
+>>> Enter the number you’d like the Snacktorial of: 2.5
+Output:
+1.875
+
+Input:
+>>> Enter the number you’d like the Snacktorial of: 3.14159
+Output:
+1.0874982674320444
+
+Input:
+>>> Enter the number you’d like the Snacktorial of: 4
+Output:
+24.0
+
+Input:
+>>> Enter the number you’d like the Snacktorial of: -3.3
+Output:
+0
+
+*** No bonus this week ***
