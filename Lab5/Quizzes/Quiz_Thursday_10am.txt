@@ -1,0 +1,33 @@
+Quiz Question:
+
+Note: This week’s quiz will be a "shorter" one due to running through the Ubuntu systems in preparation for the midterm at the beginning of the lab.
+
+In the past the brave students of CPS109 have defeated monstrous creatures known as “Teleteletubbytubbies”, which are created by grafting Teletubbies together. They have instructed us to pass on the knowledge of how to defeat these creatures recursively.
+
+Given a string teleteletubbytubby, use a recursive function to break each teleteletubbytubby into a list of mere teletubbies.
+Recall: The base teletubbies are: ["Tinky Winky", "Dipsy", "Laa-Laa", "Po"]
+Note: Teleteletubbytubbies are of the form: teletubby*n (the string of a base teletubby repeated n times)
+Hint: Consider a different recursive call for each Teletubby option (you can look at first character)
+
+Example Input/Output:
+Input: 
+teleteletubbytubby = "PoPo"
+Output:
+['Po', 'Po']
+
+Input:
+teleteletubbytubby = “Tinky Winky”
+Output:
+['Tinky Winky']
+
+Input: 
+teleteletubbytubby = “Laa-LaaLaa-LaaLaa-Laa”
+Output:
+['Laa-Laa', 'Laa-Laa', 'Laa-Laa']
+
+Input: 
+teleteletubbytubby = "DipsyDipsyDipsyDipsy"
+Output:
+['Dipsy', 'Dipsy', 'Dipsy', 'Dipsy']
+
+*** No bonus this week ***
