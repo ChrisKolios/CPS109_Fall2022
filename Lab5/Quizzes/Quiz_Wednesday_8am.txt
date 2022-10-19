@@ -3,12 +3,12 @@ Quiz Question: The Peculiar Product’s Base Case Bonanza
 Consider a recursive function “OddBonanza” that takes as an input argument a list of odd integers, and returns an odd integer consisting of the special product as defined below.
 
 Consider the following recursive function definition:
-If there is nothing in the list then return 0
-If there is only one number in the list then:
-If the number ends in 1 return 9 (and vice versa)
-If the number ends in 3 return 7 (and vice versa)
-If the number ends in 5 return 5
-Otherwise, return the product of the OddBonanza of the first half of the list and the OddBonanza of the second half of the list. Note that in the case of a list with an odd length, let the first half take the extra element.
+  If there is nothing in the list then return 0
+  If there is only one number in the list then:
+    If the number ends in 1 return 9 (and vice versa)
+    If the number ends in 3 return 7 (and vice versa)
+    If the number ends in 5 return 5
+  Otherwise, return the product of the OddBonanza of the first half of the list and the OddBonanza of the second half of the list. Note that in the case of a list with an odd length, let the first half take the extra element.
 
 Implement this function as described (recursively).
 
