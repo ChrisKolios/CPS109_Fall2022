@@ -1,0 +1,37 @@
+Quiz Question: Recursive AndOr Flip
+
+Consider a recursive function “RecursiveAndOrFlip” that takes as an input argument a list of booleans, and returns a single boolean as per the behavior defined below.
+
+Consider the following recursive function definition:
+    If there is nothing in the list then return False
+    If there is only one boolean in the list then:
+      If the boolean is True return False
+      If the boolean is False return True
+  Otherwise,
+    If the length of the list is odd, return the “and” operator of RecursiveOrFlip of the first half of the list and RecursiveAndOrFlip of the second half of the list. 
+    If the length of the list is even, return the “or” operator of RecursiveOrFlip of the first half of the list and RecursiveAndOrFlip of the second half of the list.
+
+  Note that in the case of a list with an odd length, let the first half take the extra element.
+
+Implement this function as described (recursively), and call it on some inputs.
+
+Example Input/Output:
+Input: 
+bool_list = [True, False]
+Output:
+True
+
+Input: 
+bool_list = [True, False, False]    # Consider after flips is: [False, True, True]
+# [False or True] and True -> True (Correct)
+# False and [True or True] -> False (Incorrect)
+Output:
+True
+
+Input: 
+bool_list = [False, False, True, False, True, True, False, True, True]
+Output:
+False
+
+*** No bonus this week ***
+
