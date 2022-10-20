@@ -7,9 +7,9 @@ Consider the following recursive function definition:
     If there is only one boolean in the list then:
       If the boolean is True return False
       If the boolean is False return True
-  Otherwise,
-    If the length of the list is odd, return the “and” operator of RecursiveAndOrFlip of the first half of the list and RecursiveAndOrFlip of the second half of the list. 
-    If the length of the list is even, return the “or” operator of RecursiveAndOrFlip of the first half of the list and RecursiveAndOrFlip of the second half of the list.
+    Otherwise,
+        If the length of the list is odd, return the “and” operator of RecursiveAndOrFlip of the first half of the list and RecursiveAndOrFlip of the second half of the list. 
+        If the length of the list is even, return the “or” operator of RecursiveAndOrFlip of the first half of the list and RecursiveAndOrFlip of the second half of the list.
 
   Note that in the case of a list with an odd length, let the first half take the extra element.
 
