@@ -1,4 +1,4 @@
-class car:
+class Car:
     '''
     This is a very basic class. All it has is three properties:
     make, colour, price. Why does it have a "self"?
@@ -23,9 +23,9 @@ def compare_price(car_one, car_two):
     return car_one.price == car_two.price
 
 if __name__ == "__main__":
-    our_car = car("Honda Civic", "Blue", 12000)
+    our_car = Car("Honda Civic", "Blue", 12000)
     our_car.price
-    our_car_2 = car("Honda Civic", "Red", 14000)
+    our_car_2 = Car("Honda Civic", "Red", 14000)
     print("Our car is a: " + our_car.make)
     print("The colour is: " + our_car.colour)
     print("It costs: " + str(our_car.price))
