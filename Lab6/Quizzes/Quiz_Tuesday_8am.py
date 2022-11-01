@@ -3,7 +3,7 @@ import unittest
 
 # Firstly, instead of creating your own program you'll be operating off this Python file which you can download to your system (or whose contents you can paste on Replit/etc.)
 # Secondly, you will be tasked with implementing two classes and multiple different instance methods, whose intended behaviours are described in their docstrings.
-# You ARE NOT to modify the if __name__ == "__main__", or any of the unit tests, EXCEPT the last unit test (where indicated)!
+# You ARE NOT to modify the if __name__ == "__main__", or any of the unit tests, EXCEPT the first unit test (where indicated)!
 # To get full marks, you must implement both constructors, the first 6 methods, and the first unit test. The final 2 methods in the HalloweenParty class are a bonus (not for marks).
 
 # Quiz Question: CPS109's Halloween Haunt
