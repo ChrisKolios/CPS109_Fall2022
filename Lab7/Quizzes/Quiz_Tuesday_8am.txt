@@ -1,0 +1,29 @@
+Quiz Question:
+
+You’re a secret agent for CPS109, working on decrypting files that you’ve intercepted from other courses. One such file has just come through, disguised as lyrics from the hit song All Star by Smash Mouth. You must find the hidden message, then write it to a file.
+
+The file has two forms of encryption: starting with a Caesar cipher (https://en.wikipedia.org/wiki/Caesar_cipher), then using special case syntax as described below.
+
+Part 1:
+
+For the first decryption step: figure out what the letter shift of the Caesar cipher is.
+Hint: You know the lyrics for All Star (https://www.azlyrics.com/lyrics/smashmouth/allstar.html), and you can assume the first letter has a direct shift.
+
+Once you have determined the shift, create a dictionary such that each key is a letter of the alphabet and each value is the corresponding letter resulting from the cipher.
+
+Recall the letters of the alphabet are:
+caesar_cipher_dict = {'a':'?' , 'b':'?' ,'c':'?' ,'d':'?' ,'e':'?' ,'f':'?' ,'g':'?' ,'h':'?' ,'i':'?' ,'j':'?' ,'k':'?' ,'l':'?' ,'m':'?' ,'n':'?' ,'o':'?' ,'p':'?' ,'q':'?' ,'r':'?' ,'s':'?' ,'t':'?' ,'u':'?' ,'v':'?' ,'w':'?' ,'x':'?' ,'y':'?' ,'z':'?'}
+(replace the ‘?’ with the corresponding letter you’ve figured out)
+
+Once you have your Caesar cipher dictionary completed, read in the file called “secret_code.txt”, then going character-by-character, replace the letter encountered with the Caesar-shifted letter. If the character is not in the alphabet do not change it.
+
+Note: Be careful to make sure that you preserve uppercase/lowercase letters!
+Hint: If it is uppercase (str.isupper()) you can first convert it to lowercase using str.lower(),, then put it through your caesar_cipher_dict, then convert the resulting value back to uppercase via str.upper().
+
+Part 2:
+
+Once you’ve replaced the letters with the corresponding cipher-shifted values, you must pick out the uppercase letters that are out of place. An uppercase letter should only appear as the first character in a line. Any other uppercase character is part of the secret message. 
+
+Find all of the characters from the secret message, and collect them in a list called secret_message. Combine all the characters into a string. Then, write the following string to a new file called “code_cracked.txt”:
+“https://tinyurl.com/” + str(secret_message_string)
+(replacing secret_message_string with the characters from your secret_message list)!
