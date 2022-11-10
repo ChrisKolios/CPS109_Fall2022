@@ -1,0 +1,38 @@
+Quiz Question:
+
+Good morning, angels - err, CPS109 students.
+
+“Good morning, Charlie - err, TAs” you reply.
+
+I hope you’re rested and ready for your next quiz. We’ve received a secret message from the students in the other lab sections, and we need you to decode it. They have hidden the message using a modified Book Cipher (https://en.wikipedia.org/wiki/Book_cipher). The message they provided to you was:
+
+[64, 1162, 561, 6801, 79, 14636, -1, 1670, 2300, 6, 31868, 130, 93, 413, 1663, -1, 124, 9991, 61592, 436, 1413, 1663, 2553, 51544, 8, -1, 1670, 1791, 406, 1669, 274, 303, 324, 87, 3664, -1, -1, 1663, 3965, 2166, 79, 4167, 1670, 4136, 1663, 2553, 12194, -1, 37148, 79, 474, 1670, 24496, -1, -1, 2227, 77, 79, 18935, 1670, 247, -1, 2227, 77, 79, 1841, 1670, 359, -1, 2227, 77, 79, 3795, 32213, 130, 5633, 1670, -1, 2227, 77, 79, 474, 1670, 19153, -1, 2227, 77, 79, 1868, 100563, -1, 2227, 77, 79, 4167, 124, 16102, 130, 8580, 1670, -1, -1, 64, 315, 3923, 1422, 87, 110, 93, 848, -1, 2232, 3087, 1033, 257, 8580, 1085, 1670, 1162, 3453, 1453, 79, 1868, 10, -1, 4720, 64, 163, 2300, 1413, 436, 257, 77, 106, -1, 64, 2300, 6, 9336, 130, 64, 1162, 77, 79, 20467, 10, -1, -1, 130, 1196, 1670, 5353, 2395, 4136, 1663, 2553, 12194, -1, 413, 406, 4167, 2395, 1670, 1162, 3453, 56395, 79, 2396, -1, -1, 2227, 77, 79, 18935, 1670, 247, -1, 2227, 77, 79, 1841, 1670, 359, -1, 2227, 77, 79, 3795, 32213, 130, 5633, 1670, -1, 2227, 77, 79, 474, 1670, 19153, -1, 2227, 77, 79, 1868, 100563, -1, 2227, 77, 79, 4167, 124, 16102, 130, 8580, 1670, -1, -1, 2227, 77, 79, 18935, 1670, 247, -1, 2227, 77, 79, 1841, 1670, 359, -1, 2227, 77, 79, 3795, 32213, 130, 5633, 1670, -1, 2227, 77, 79, 474, 1670, 19153, -1, 2227, 77, 79, 1868, 100563, -1, 2227, 77, 79, 4167, 124, 16102, 130, 8580, 1670, -1, -1, 64, 315, 3923, 1422, 87, 110, 93, 848, -1, 2232, 3087, 1033, 257, 8580, 1085, 1670, 1162, 3453, 1453, 79, 1868, 10, -1, 4720, 64, 163, 2300, 1413, 436, 257, 77, 106, -1, 64, 2300, 6, 9336, 130, 64, 1162, 77, 79, 20467, 10, -1, -1, 1663, 3965, 2166, 79, 4167, 1670, 4136, 1663, 2553, 12194, -1, 37148, 79, 474, 1670, 24496, -1, -1, 2227, 77, 79, 18935, 1670, 247, -1, 2227, 77, 79, 1841, 1670, 359, -1, 2227, 77, 79, 3795, 32213, 130, 5633, 1670, -1, 2227, 77, 79, 474, 1670, 19153, -1, 2227, 77, 79, 1868, 100563, -1, 2227, 77, 79, 4167, 124, 16102, 130, 8580, 1670, -1, -1, 2227, 77, 79, 18935, 1670, 247, -1, 2227, 77, 79, 1841, 1670, 359, -1, 2227, 77, 79, 3795, 32213, 130, 5633, 1670, -1, 2227, 77, 79, 474, 1670, 19153, -1, 2227, 77, 79, 1868, 100563, -1, 2227, 77, 79, 4167, 124, 16102, 130, 8580, 1670, -1, -1, 2227, 77, 79, 18935, 1670, 247, -1, 2227, 77, 79, 1841, 1670, 359, -1, 2227, 77, 79, 3795, 32213, 130, 5633, 1670, -1, 2227, 77, 79, 474, 1670, 19153, -1, 2227, 77, 79, 1868, 100563, -1, 2227, 77, 79, 4167, 124, 16102, 130, 8580, 1670]
+
+These are indices corresponding to the words in “A Tale of Two Cities” by Charles Dickens. They have also provided you with a .txt version of the book, to use.
+
+Their instructions are as follows:
+
+
+First, create an empty dictionary decoder_dict.
+
+Then, open the file: A_Tale_of_Two_Cities.txt. Make sure to provide the input parameter encoding=’utf8’ in your open() call.
+
+Once you have the text open, move to the 2825th character in the text, and then read the rest of the text into a string.
+
+Use .split() to split the string into a list of individual words.
+
+For all indices present in the secret_message list from above, get the word at that index, and add it to the decoder_dict (such that the key is the index, and the value is the corresponding word from the text).
+
+Additionally, create some running string, and for all indices present, if the index is -1 then add a newline character to the running string, and otherwise add the word corresponding to that index (from your decoder_dict, NOT your file) followed by a space at the end to the running string.
+
+Once this is completed, print your decoder_dict, and write your running string to a file “decoded_message.txt”.
+
+It was the best of times, it was the worst of times…
+
+
+
+
+
+
+
+
