@@ -24,7 +24,7 @@ import unittest
 
 class QuizTestCases(unittest.TestCase): # Your fifth task will be to complete all unittests here.
     def test_1_find_lowest_value_normal(self): # An example for you...
-        self.assertEqual(find_lowest_value([4, 5, 3, 3, 0 -3], 5))
+        self.assertEqual(find_lowest_value([4, 5, 3, 3, 0 -3]), 5)
 
     def test_2_remove_all_qs(self): # Create a test case for the remove_all_qs function
         pass
