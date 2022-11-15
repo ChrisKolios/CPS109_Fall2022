@@ -14,7 +14,7 @@ import unittest
 # TODO: complete remove_all_qs
 
 
-# Your third task will be to create a function called find_biggest_mult that takes in two nonempty lists of integers and returns the indices of the two (one from each list) that, when multiplied, give the biggest product. Return as a tuple.
+# Your third task will be to create a function called find_biggest_mult that takes in two nonempty lists of integers and returns the indices of the two numbers that result in the largest product (one from each list) that, when multiplied, give the biggest product. Return as a tuple.
 # TODO: complete find_biggest_mult
 
 
