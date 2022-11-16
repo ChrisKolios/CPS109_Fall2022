@@ -14,7 +14,7 @@ import unittest
 # TODO: complete remove_all_ees
 
 
-# Your third task will be to create a function called find_smallest_div that takes in two nonempty lists of integers and returns the indices of the two (one from each list) that, when multiplied, give the smallest quotient. Return as a tuple.
+# Your third task will be to create a function called find_smallest_div that takes in two nonempty lists of integers and returns the indices of the two (one from each list) that, when divided, give the smallest quotient. Return as a tuple.
 # TODO: complete find_smallest_div
 
 
