@@ -1,0 +1,47 @@
+Quiz Question:
+
+In this week's quiz (the final quiz in CPS109 - well done on getting here!), we will be using a few of the concepts learned today to solve a given problem.
+
+Write a program that takes in user input. The user input should be a series of integers, and for each integer entered add it to a list. 
+If they did not enter an integer, catch the error then prompt them to do so and keep asking. (With one exception, as described below)
+
+If they enter just the Enter key, then close that list. If they enter an integer, then get them to populate a new list. If they enter the Enter key twice in a row, however, then finish prompting the user for input.
+Once the user has finished entering their inputs (indicated by two Enter presses back-to-back), create a greater list that contains the lists of integers that the user has entered, in order.
+
+Then, select a value randomly from the odd-numbered indices in the even-numbered (by index) lists, and multiply all even-numbered indices in the odd-numbered lists by that random value. Print the value selected.
+
+Print the modified list of lists.
+
+
+Example Input/Output:
+Input:
+>>> Enter an integer: 1
+>>> Enter an integer: no I don't think I will
+Please enter a valid integer
+>>> Enter an integer: 2
+>>> Enter an integer: 2.5
+Please enter a valid integer
+>>> Enter an integer: 3
+>>> Enter an integer: 
+>>> Enter an integer: 4
+>>> Enter an integer: 5
+>>> Enter an integer: 6
+>>> Enter an integer: 7
+>>> Enter an integer: 
+>>> Enter an integer: 4.25
+Please enter a valid integer
+>>> Enter an integer: 8
+>>> Enter an integer: 9
+>>> Enter an integer: 10
+>>> Enter an integer: 11
+>>> Enter an integer: 
+>>> Enter an integer: 12
+>>> Enter an integer: 
+>>> Enter an integer: 
+
+# Our list would look like: [[1, 2, 3], [4, 5, 6, 7], [8, 9, 10, 11], [12]]
+# The random value would be selected from: [2, 9, 11] (let's assume 11 was selected randomly)
+
+Output:
+The random number selected was: 11
+[[1, 2, 3], [44, 5, 66, 7], [8, 9, 10, 11], [132]]
