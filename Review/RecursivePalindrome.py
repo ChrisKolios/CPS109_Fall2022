@@ -2,7 +2,7 @@ import unittest
 '''
 Assume that s is a string. Check to see if s is a palindrome.
 If it is, return True. Else, return False. Recall that a
-palinedrome is a string that is the same string if reversed.
+palindrome is a string that is the same string if reversed.
 
 You must use RECURSION to solve the problem.
 
@@ -10,7 +10,7 @@ For example,
 recursive_palindrome('racecar') is True
 recursive_palindrome('blue') is False
 
-Three test caases have been included. Add two more,
+Three test cases have been included. Add two more,
 both of which should be edge cases.
 '''
 def recursive_palindrome(s) :
