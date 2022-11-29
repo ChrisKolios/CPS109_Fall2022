@@ -18,10 +18,11 @@ def recursive_palindrome(s) :
     if len(s) == 0:
         return True
     elif len(s) == 1: # BC 2: 1 thing
+        print(s, True)
         return True
     else: # 2 or more
         recursive_result = recursive_palindrome(s[1:-1]) # s minus the first and last characters (-1 is non-inclusive, which is why not -2)
-        # print(s[0], s[1], recursive_result) # To ensure things working properly
+        # print(s[0], s[-1], recursive_result) # To ensure things working properly
         return ((s[0] == s[-1]) and recursive_result)
 
 class PalinTests(unittest.TestCase):
